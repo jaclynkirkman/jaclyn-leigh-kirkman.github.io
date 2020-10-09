@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What about your life can determine the cost of healthcare?</title>
+	<script src="https://unpkg.com/enter-view"></script>
+</head>
+<style type="text/css">
+body, html {
+	font-family:"Avenir", sans-serif;
+	top:0;
+	left:0;
+	margin:0;
+	color:#1d1d1d;
+}
+#featured {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  overflow:none;
+}
+.aligner {
+	max-width:80%;
+}
+#featured .title{
+	text-align:center;
+	margin-top:5%;
+	width:100%;
+}
+.title h2 {
+	font-size:1em;
+	font-weight:400;
+}
+#featured img {
+  width:100%;
+}
+#scroll {
+  font-stretch:expanded;
+  text-align:center;
+  width:80%;
+  position:absolute;
+  bottom:10%;
+  font-size:6em;
+  color:#1d1d1d;
+  cursor:pointer;
+  transition:0.5s all ease-in-out;
+  line-height:0.5em;
+}
+#scroll:hover {
+  transform:scale(1.2);
+  transform-origin:50% 30%;
+}
+.section{
+  opacity:0;
+  width:90%;
+  height:auto;
+  padding:5%;
+  margin-bottom:0%;
+  padding-bottom:0%;
+  line-height:2em;
+  transform:translateY(5em);
+  transition:0.5s ease-in-out;
+  margin:auto;
+}
+.section img {
+	width:100%;
+}
+.entered {
+  transform:translateY(0em);
+  opacity:1;
+}
+.tableauPlaceholder {
+	height:50vh;
+}
+.scrollpost {
+	width:100%;
+	padding:0;
+	margin:0;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	white-space:nowrap;
+}
+.scrollpost img {
+	width:25%;
+	display:inline-block;
+	margin:0% 4% 0% 0%;
+}
+.open {
+	position:relative;
+		text-align:center;
+	margin:auto;
+}
+.open:hover .overlay{
+	opacity:0.8;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor:pointer;
+	transition:0.5s ease-in-out;
+}
+.open img {
+	width:80%;
+}
+
+.overlay h2 {
+	color:white;
+	background-color:none;
+	margin:auto;
+}
+#final {
+	margin-bottom:5%;
+}
+.open a {
+	text-decoration:none;
+	background-color:none;
+	padding:2% 4%;
+	cursor:pointer;
+	border:0.05em solid white;
+	transition:0.5s ease-in-out;
+}
+.open a:hover {
+	background-color:white;
+}
+.open a:hover h2{
+	color:#1d1d1d;
+}
+@media screen and (max-width:767px){
+	#featured img {
+		margin-left:-50%;
+		bottom:0;
+		position:absolute;
+		width:200%;
+		z-index:0;
+	}
+	#featured .title {
+		z-index:1;
+	}
+	.scrollpost img {
+		width:70%;
+	}
+}
+</style>
+<body>
+
+<div id="featured">
+	<div class="aligner">
+		<div class="title">
+		<h1>What about your life can determine the cost of healthcare?</h1>
+		<h2>Jaclyn Kirkman</h2>
+		<h4>Gettys Images</h4>
+
+		</div>
+	  	<img src="assets/featured/cover.png">
+	 	 <div id="scroll">&#xfe40;</div>	
+	</div>
+</div>
+
+<!-- Simple text intro -->
+<div class="section" id="first">
+	<h1>About the project</h1>
+	<p>Over the past five years I have worked in the healthcare, pharmaceutical industry. I have always tried to understand healthcare costs and their implications. I am always interested in finding out where healthcare costs come from. The viewpoint I took with this project was trying to find the connection or trends between various different attributes. Does your gender, family status, weight, habits, etc. effect your costs? I decided to create a visual essay for this project because data analytics is all about bringing users along the data journey with you. Visual essays resonate really well with me and I think they are an effective way to demonstrate different aspects of a set of data and help the user to understand one step at a time. Since the data was simulated it was hard to correlate specific findings with realistic thoughts, but using the data given I found that region does matter. There is a distinct difference between those who do smoke and those who do not smoke as far as BMI is concerned and overall costs.. Gender also plays a big part in costs and if you have 2-3 children your costs are more likely to be higher.  </p>
+</div>
+
+<!-- About the data carousel -->
+<div class="section">
+	<h1>About the data</h1>
+	<p>The data is simulated on the basis of demographic statistics from the US Census Bureau.</p>
+	<!-- the scrolling post holder -->
+	<div class="scrollpost">
+		<img src="assets/about-the-data/1.png">
+		<img src="assets/about-the-data/2.png">
+		<img src="assets/about-the-data/3.png">
+	</div>
+</div>
+
+<div class="section">
+	<h1>Effects how many children in a family in relation to healthcare costs</h1>
+	<img src="assets/casestudy/image.png">
+</div>
+
+<div class="section">
+	<h1>Effects age can have on healthcare costs</h1>
+	
+	<!-- the scrolling post holder -->
+	<div class="scrollpost">
+		<img src="assets/casestudy1/2.png">
+		
+	</div>
+</div>
+
+
+<!-- Tableau Public embed -->
+
+<div class="section">
+	<h1>Avg cost based off of smoking habits and other personal attributes </h1>
+<<div class='tableauPlaceholder' id='viz1602269135764' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8T&#47;8TWYJ2FX9&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;8TWYJ2FX9' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8T&#47;8TWYJ2FX9&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1602269135764');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<!-- About the data carousel -->
+<div class="section">
+	<h1>Cost and BMI averages by region and gender</h1>
+	<p>Small multiples about </p>
+	<!-- the scrolling post holder -->
+	<div class="scrollpost">
+		<img src="assets/months/Key.jpg">
+		<img src="assets/months/NorthEast.jpg">
+		<img src="assets/months/NorthWest.jpg">
+		<img src="assets/months/SouthEast.jpg">
+		<img src="assets/months/SouthWest.jpg">
+	</div>
+</div>
+
+
+</body>
+<script type="text/javascript">
+
+scroll=document.querySelector('#scroll');
+setup = document.querySelector('#first');
+scroll.onclick=function() {
+    first.scrollIntoView({ 
+    behavior: 'smooth',
+    block: "start",
+  });
+};
+
+enterView({
+  selector: '.section',
+  enter: function(el) {
+    el.classList.add('entered');
+  },
+  exit: function(el) {
+    el.classList.remove('entered');
+  },
+  progress: function(el, progress) {
+
+  },
+  offset: 0.2, // enter at middle of viewport
+});
+
+</script>
+</html>
